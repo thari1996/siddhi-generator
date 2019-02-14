@@ -20,7 +20,7 @@ describe('JHipster generator siddhiX', () => {
                     testmode: true
                 })
                 .withPrompts({
-                    userFortune: 'simple fortune cookie'
+                    userFortune: 'simple Siddhi app'
                 })
                 .withGenerators(deps)
                 .on('end', done);
