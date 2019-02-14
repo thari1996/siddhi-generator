@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-siddhi",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JHipster module, additional siddhi support in your JHipster application",
   "keywords": [
     "yeoman-generator",
