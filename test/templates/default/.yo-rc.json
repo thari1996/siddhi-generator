@@ -1,24 +1,32 @@
 {
   "generator-jhipster": {
-    "baseName": "sampleMysql",
+    "promptValues": {
+      "packageName": "com.mycompany.myapp"
+    },
+    "jhipsterVersion": "4.1.1",
+    "baseName": "tmp2",
     "packageName": "com.mycompany.myapp",
     "packageFolder": "com/mycompany/myapp",
-    "authenticationType": "session",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
     "hibernateCache": "ehcache",
-    "clusteredHttpSession": "no",
-    "websocket": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
     "prodDatabaseType": "mysql",
-    "searchEngine": "no",
-    "useSass": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
     "buildTool": "maven",
-    "frontendBuilder": "grunt",
-    "enableTranslation": true,
     "enableSocialSignIn": false,
-    "rememberMeKey": "2bb60a80889aa6e6767e9ccd8714982681152aa5",
-    "testFrameworks": [
-      "gatling"
-    ]
+    "jwtSecretKey": "c550a10029fa4a73edd62e8f1f96919ee09556a7",
+    "clientFramework": "angular1",
+    "useSass": false,
+    "clientPackageManager": "yarn",
+    "applicationType": "monolith",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": false
   }
 }
