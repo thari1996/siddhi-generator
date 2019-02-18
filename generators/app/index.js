@@ -31,8 +31,8 @@ module.exports = generator.extend({
         const prompts = [
             {
                 type: 'input',
-                name: 'userFortune',
-                message: 'Please write your own fortune cookie',
+                name: 'userSiddhi',
+                message: 'Please write your own Siddhi app',
                 default: 'Do. Or do not. There is no try.'
             }
         ];
