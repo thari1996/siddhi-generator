@@ -1,10 +1,9 @@
 language: node_js
 node_js:
-  - "iojs"
-  - "7"
+  - "stable"
 before_script:
     - npm install -g gulp-cli
-  script: gulp
+  script: gulp travis
 
   after_script: 'cat ./coverage/lcov.info | coveralls'
   env:
