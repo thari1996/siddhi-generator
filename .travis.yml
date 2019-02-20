@@ -1,6 +1,11 @@
+os:
+    - linux
 language: node_js
 node_js:
-  - "stable"
-before_script:
-    - npm install -g gulp-cli
-  script: gulp travis
+    - "6.11.0"
+before_install:
+    - npm install -g npm
+
+script:
+    - gulp eslint
+    - gulp test
