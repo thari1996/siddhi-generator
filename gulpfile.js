@@ -47,7 +47,9 @@ gulp.task('test', ['pre-test'], (cb) => {
 gulp.task('bump-patch', bump('patch'));
 gulp.task('bump-minor', bump('minor'));
 gulp.task('bump-major', bump('major'));
-
+gulp.task('travis',['build','testServerJS'], function () {
+    process.exit(0);
+});
 
 gulp.task('git-commit', () => {
     const v = `update to version ${version()}`;
