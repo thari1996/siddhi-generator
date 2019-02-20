@@ -2,13 +2,13 @@ os:
     - linux
 language: node_js
 node_js:
-    - "stable"
+    - "10.13.0"
 before_install:
     - npm install -g npm
-    - npm install -g yarn
+    
 install:
-    - yarn install
-    - yarn link
+    - npm install
+
 
 script:
      - gulp test
