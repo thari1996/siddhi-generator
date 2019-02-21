@@ -1,5 +1,5 @@
 {
-  "name": "generator-jhipster-siddhi",
+  "name": "@xiges/generator-jhipster-siddhi",
   "version": "0.0.7",
   "description": "JHipster module, additional siddhi support in your JHipster application",
   "keywords": [
