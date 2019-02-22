@@ -3,7 +3,7 @@ const generator = require('yeoman-generator');
 const packagejs = require('../../package.json');
 
 // Stores JHipster variables
-const jhipsterVar = { moduleName: 'siddhiX' };
+const jhipsterVar = { moduleName: 'siddhi' };
 
 // Stores JHipster functions
 const jhipsterFunc = {};
@@ -19,7 +19,7 @@ module.exports = generator.extend({
         },
         displayLogo() {
             // Have Yeoman greet the user.
-            this.log(`Welcome to the ${chalk.bold.yellow('JHipster siddhi')} generator! ${chalk.yellow(`v${packagejs.version}\n`)}`);
+            this.log(`Welcome to the ${chalk.bold.yellow('WSO2 siddhi')} generator! ${chalk.yellow(`v${packagejs.version}\n`)}`);
         }
     },
 
@@ -75,28 +75,6 @@ module.exports = generator.extend({
     },
 
     install() {
-        let logMsg =
-            `To install your dependencies manually, run: ${chalk.yellow.bold(`${this.clientPackageManager} install`)}`;
-
-        if (this.clientFramework === 'angular1') {
-            logMsg =
-                `To install your dependencies manually, run: ${chalk.yellow.bold(`${this.clientPackageManager} install & bower install`)}`;
-        }
-        const injectDependenciesAndConstants = (err) => {
-            if (err) {
-                this.warning('Install of dependencies failed!');
-                this.log(logMsg);
-            } else if (this.clientFramework === 'angular1') {
-                this.spawnCommand('gulp', ['install']);
-            }
-        };
-        const installConfig = {
-            bower: this.clientFramework === 'angular1',
-            npm: this.clientPackageManager !== 'yarn',
-            yarn: this.clientPackageManager === 'yarn',
-            callback: injectDependenciesAndConstants
-        };
-        this.installDependencies(installConfig);
 
 
         this.addMavenDependency('org.wso2.siddhi', 'siddhi-query-api', '4.1.7');
@@ -106,6 +84,6 @@ module.exports = generator.extend({
     },
 
     end() {
-        this.log('End of Siddhi generator');
+        this.log('End of WSO2 Siddhi generator');
     }
 });

@@ -48,6 +48,7 @@ gulp.task('bump-patch', bump('patch'));
 gulp.task('bump-minor', bump('minor'));
 gulp.task('bump-major', bump('major'));
 
+
 gulp.task('git-commit', () => {
     const v = `update to version ${version()}`;
     gulp.src(['./generators/**/*', './README.md', './package.json', './gulpfile.js', './.travis.yml', './travis/**/*'])
